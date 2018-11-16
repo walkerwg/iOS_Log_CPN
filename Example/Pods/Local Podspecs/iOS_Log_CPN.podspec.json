@@ -1,0 +1,47 @@
+{
+  "name": "iOS_Log_CPN",
+  "version": "0.1.0",
+  "summary": "A short description of iOS_Log_CPN.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/walkerwg/iOS_Log_CPN",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "walkerwg": "907029564@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/walkerwg/iOS_Log_CPN.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOS_Log_CPN/Classes/**/*",
+  "public_header_files": "iOS_Log_CPN/Classes/**/*.{h,m}",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.1"
+  },
+  "default_subspecs": "LLog",
+  "dependencies": {
+    "CocoaLumberjack": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "LLog",
+      "source_files": "iOS_Log_CPN/Classes/LLog/*",
+      "dependencies": {
+        "iOS_Log_CPN/Formatter": [
+
+        ]
+      }
+    },
+    {
+      "name": "Formatter",
+      "source_files": "iOS_Log_CPN/Classes/Formatter/*"
+    }
+  ]
+}

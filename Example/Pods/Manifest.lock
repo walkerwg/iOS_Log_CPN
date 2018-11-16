@@ -1,0 +1,34 @@
+PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - iOS_Log_CPN (0.1.0):
+    - CocoaLumberjack
+    - iOS_Log_CPN/LLog (= 0.1.0)
+  - iOS_Log_CPN/Formatter (0.1.0):
+    - CocoaLumberjack
+  - iOS_Log_CPN/LLog (0.1.0):
+    - CocoaLumberjack
+    - iOS_Log_CPN/Formatter
+
+DEPENDENCIES:
+  - iOS_Log_CPN (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  iOS_Log_CPN:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  iOS_Log_CPN: 0bec7478ad8a0ae8036027898c8e71de11c3c48a
+
+PODFILE CHECKSUM: cb20514f489aa10e696539e81f7ca9bdd4cdd916
+
+COCOAPODS: 1.5.2

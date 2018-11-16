@@ -31,6 +31,22 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'iOS_Log_CPN/Classes/**/*'
+  s.public_header_files = 'iOS_Log_CPN/Classes/**/*.{h,m}'
+  s.pod_target_xcconfig = {
+      'SWIFT_VERSION' => '4.1',
+  }
+  
+  #-----------------------文件分级-------------------#
+  s.default_subspec = 'LLog'
+  s.subspec 'LLog' do |ss|
+      ss.source_files = 'iOS_Log_CPN/Classes/LLog/*'
+      ss.dependency 'iOS_Log_CPN/Formatter'
+  end
+  s.subspec 'Formatter' do |ss|
+      ss.source_files = 'iOS_Log_CPN/Classes/Formatter/*'
+  end
+  
+  #-----------------------文件分级-------------------#
   
   # s.resource_bundles = {
   #   'iOS_Log_CPN' => ['iOS_Log_CPN/Assets/*.png']
@@ -39,4 +55,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CocoaLumberjack'
+  
+  
+  
 end

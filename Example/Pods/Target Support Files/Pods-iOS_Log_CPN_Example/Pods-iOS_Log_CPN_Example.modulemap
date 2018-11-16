@@ -1,0 +1,6 @@
+framework module Pods_iOS_Log_CPN_Example {
+  umbrella header "Pods-iOS_Log_CPN_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

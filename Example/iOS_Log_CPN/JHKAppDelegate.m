@@ -8,11 +8,27 @@
 
 #import "JHKAppDelegate.h"
 
+#import <iOS_Log_CPN/LLog.h>
+
 @implementation JHKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [LLog ConfigLLog];
+    LLogVerbose(@"VideoChat:xxxxxxxxx");
+    LLogWarn(@"JHK:xxxxxxxxx");
+    LLogInfo(@"VideoChat:xxxxxxxxxx");
+    
+        for (int i = 0; i < 10000; i ++) {
+    DDLogVerbose(@"Verbose");   // 详细日志
+    DDLogDebug(@"Debug");       // 调试日志
+    DDLogInfo(@"Info");         // 信息日志
+    DDLogWarn(@"Warn");         // 警告日志
+    DDLogError(@"Error33333333333333");       // 错误日志
+        }
+    
     return YES;
 }
 

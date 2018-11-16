@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07E45ED6845349231D02D423 /* iOS_Log_CPN.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = iOS_Log_CPN.podspec; path = ../iOS_Log_CPN.podspec; sourceTree = "<group>"; };
+		07E45ED6845349231D02D423 /* iOS_Log_CPN.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOS_Log_CPN.podspec; path = ../iOS_Log_CPN.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		09E479E38D8BBF54FFB57E0E /* Pods-iOS_Log_CPN_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Log_CPN_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Log_CPN_Tests/Pods-iOS_Log_CPN_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		350EC61C0FA3111E9CF31679 /* Pods-iOS_Log_CPN_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Log_CPN_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Log_CPN_Tests/Pods-iOS_Log_CPN_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* iOS_Log_CPN_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Log_CPN_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +64,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6858C1A8627B3C8D0BC6C32 /* Pods-iOS_Log_CPN_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Log_CPN_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Log_CPN_Example/Pods-iOS_Log_CPN_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C8AAFA4AE45EB6194A6D22D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EE3809B529141BF2CB07ACA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C8AAFA4AE45EB6194A6D22D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EE3809B529141BF2CB07ACA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F1DEF622A4ECE38DA9A052B3 /* Pods_iOS_Log_CPN_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Log_CPN_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = walkerwg;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4XXN38ECKL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -337,10 +340,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Log_CPN_Example/Pods-iOS_Log_CPN_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/iOS_Log_CPN/iOS_Log_CPN.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOS_Log_CPN.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +490,7 @@
 			baseConfigurationReference = 66B1177BF5AD43BC9FC0BA97 /* Pods-iOS_Log_CPN_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4XXN38ECKL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_Log_CPN/iOS_Log_CPN-Prefix.pch";
 				INFOPLIST_FILE = "iOS_Log_CPN/iOS_Log_CPN-Info.plist";
@@ -500,6 +506,7 @@
 			baseConfigurationReference = A6858C1A8627B3C8D0BC6C32 /* Pods-iOS_Log_CPN_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4XXN38ECKL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_Log_CPN/iOS_Log_CPN-Prefix.pch";
 				INFOPLIST_FILE = "iOS_Log_CPN/iOS_Log_CPN-Info.plist";
