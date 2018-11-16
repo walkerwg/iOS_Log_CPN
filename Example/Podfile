@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOS_Log_CPN_Example' do
+  pod 'iOS_Log_CPN', :path => '../'
+
+  target 'iOS_Log_CPN_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
