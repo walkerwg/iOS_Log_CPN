@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOS_Log_CPN'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of iOS_Log_CPN.'
 
 # This description is used to generate tags and improve search results.
@@ -39,11 +39,11 @@ TODO: Add long description of the pod here.
   #-----------------------文件分级-------------------#
   s.default_subspec = 'LLog'
   s.subspec 'LLog' do |ss|
-      ss.source_files = 'iOS_Log_CPN/Classes/LLog/*'
+      ss.source_files = 'iOS_Log_CPN/Classes/LLog/*.{h,m}'
       ss.dependency 'iOS_Log_CPN/Formatter'
   end
   s.subspec 'Formatter' do |ss|
-      ss.source_files = 'iOS_Log_CPN/Classes/Formatter/*'
+      ss.source_files = 'iOS_Log_CPN/Classes/Formatter/*.{h,m}'
   end
   
   #-----------------------文件分级-------------------#

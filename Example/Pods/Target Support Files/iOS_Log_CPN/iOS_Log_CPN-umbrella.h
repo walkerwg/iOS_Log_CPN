@@ -12,7 +12,7 @@
 
 #import "LogFormatter.h"
 #import "LLog.h"
-
+#import "CocoaLumberjack.h"
 
 FOUNDATION_EXPORT double iOS_Log_CPNVersionNumber;
 FOUNDATION_EXPORT const unsigned char iOS_Log_CPNVersionString[];

@@ -12,7 +12,7 @@
 
 + (void)ConfigLLog {
     
-    if ([UIDevice currentDevice].systemVersion.floatValue <= 10.0) {
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0) {
         [DDOSLogger sharedInstance].logFormatter = [[LogFormatter alloc] init];
         [DDLog addLogger:[DDOSLogger sharedInstance] withLevel:ddLogLevel];
     } else {
